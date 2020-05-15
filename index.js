@@ -31,10 +31,10 @@ function unleashDog(dogName, dogBreed) {
   return dogCare;
 }
 let routine=[wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog]
-let result=""
+
 function exerciseDog(dogName, dogBreed){
   for(let i=0;i<routine.length;i++){
-    result=routine[i](dogName,dogBreed)
+    routine[i](dogName,dogBreed)
   }
 }
   exerciseDog("Byron","poodle")
